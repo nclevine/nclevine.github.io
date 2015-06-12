@@ -1,0 +1,128 @@
+/* normalize.css has been included before this file */
+@import url(https://fonts.googleapis.com/css?family=Chivo);
+
+*{
+  box-sizing: border-box;
+  font-family: 'Chivo', sans-serif;
+  color: #222;
+}
+h1{
+  text-align: center;
+}
+#github-search{
+  margin: 30px auto;
+  width: 50%;
+}
+input{
+  background: white;
+  padding: 5px;
+  border: 1px black solid;
+}
+#search-bar{
+  width: 78%;
+}
+#search-submit{
+  float: right;
+  clear: both;
+}
+#search-submit:active{
+  background: #ddd;
+}
+#results-container{
+  padding-bottom: 30px;
+}
+.result{
+  margin: 0 auto;
+  width: 50%;
+  padding: 20px 15px;
+  border-bottom: 1px black solid;
+}
+.result:last-child{
+  border-bottom: none;
+}
+.result h3{
+  margin: 0;
+}
+.result:active{
+  background: #ddd;
+}
+.result:hover{
+  cursor: pointer;
+}
+.search-title{
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+#search-bar, .search-title span, .repo-link a, .repo-link a:visited{
+  color: #070;
+}
+#loading, #overlay-container{
+  margin-top: 10%;
+  display: none;
+  position: fixed;
+}
+#overlay-container{
+  padding: 15px;
+  width: 50%;
+  left: 25%;
+  background: white;
+  border: 1px solid black;
+}
+#overlay-container h3, #overlay-container p, #overlay-container a{
+  margin: 10px 0;
+}
+.close{
+  text-align: right;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #777;
+}
+.close a:visited{
+  color: #777;
+}
+.close a:active, .repolink a:active{
+  color: #222;
+}
+#overlay-container a{
+  overflow-wrap: break-word;
+  text-decoration: none;
+}
+#loading{
+  left: 42%;
+  width: 16%;
+  padding: 10px;
+  text-align: center;
+  background: #222;
+  color: white;
+}
+.owner{
+  color: #777;
+}
+
+@media (max-width: 700px){
+  h1{
+    font-size: 1.9em;
+  }
+  #search-bar, #search-submit{
+    display: block;
+    width: 100%;
+  }
+  #search-bar{
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .search-title{
+    margin-top: 50px;
+  }
+  #loading{
+    width: 50%;
+    left: 25%;
+  }
+  #overlay-container{
+    width: 80%;
+    left: 10%;
+  }
+  .result{
+    width: 80%;
+  }
+}

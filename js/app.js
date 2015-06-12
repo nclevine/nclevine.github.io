@@ -28,7 +28,7 @@ $(document).ready(function(){
         complete: loadingEnd
       }).done(function(response){
         if(response.total_count == 0){
-          $resultsContainer.html('<h2>No results</h2>')
+          $resultsContainer.html("<h2 id='no-results'>No results</h2>")
         } else{
           var items = response.items;
           cache[searchTerm] = items;

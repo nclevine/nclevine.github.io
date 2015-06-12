@@ -17,6 +17,7 @@ input{
   background: white;
   padding: 5px;
   border: 1px black solid;
+  border-radius: none;
 }
 #search-bar{
   width: 78%;

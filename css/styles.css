@@ -95,7 +95,7 @@ input{
   background: #222;
   color: white;
 }
-.owner{
+.owner, .description span{
   color: #777;
 }
 

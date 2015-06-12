@@ -128,4 +128,7 @@ input{
   .result{
     width: 80%;
   }
+  h2{
+    margin-top: 15px;
+  }
 }

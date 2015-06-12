@@ -121,6 +121,7 @@ input{
   #overlay-container{
     width: 80%;
     left: 10%;
+    margin-top: 0;
   }
   .result{
     width: 80%;
